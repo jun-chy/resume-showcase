@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蔡浩宇 · 嵌入式设计工程师 | 竞赛获奖与项目证书展示</title>
+<meta name="description" content="蔡浩宇 — 中南林业科技大学通信工程2027届，嵌入式设计工程师 / 边缘计算部署工程师。5项学科竞赛奖项（国家级2项·省级3项），RK3588 + OpenHarmony 边缘AI端侧部署实战，中电科48所硬件实习。">
+<meta property="og:title" content="蔡浩宇 · 嵌入式设计工程师 | 竞赛获奖与项目展示">
+<meta property="og:description" content="5项学科竞赛奖项（国家级2项·省级3项）· RK3588/OpenHarmony 边缘AI部署 · 中电科48所硬件实习">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --navy:#0a1730; --navy2:#10254d;
+  --primary:#2456e6; --primary-dark:#1a3fb0;
+  --gold:#b45309; --gold-bright:#f59e0b;
+  --bg:#f5f7fb; --card:#ffffff;
+  --ink:#182238; --muted:#5c6b85; --line:#e4eaf4;
+  --radius:16px;
+  --shadow:0 2px 6px rgba(16,37,77,.05),0 14px 34px rgba(16,37,77,.08);
+  --font:"PingFang SC","Microsoft YaHei","Noto Sans SC","Source Han Sans SC",-apple-system,"Segoe UI",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--primary);text-decoration:none}
+
+/* ---------- top nav ---------- */
+.topnav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,23,48,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:0 24px;height:60px}
+.nav-logo{color:#fff;font-weight:700;letter-spacing:1px;white-space:nowrap;display:flex;align-items:center;gap:8px}
+.nav-logo .dot{width:9px;height:9px;border-radius:50%;background:var(--gold-bright);box-shadow:0 0 10px var(--gold-bright)}
+.nav-logo small{font-weight:400;font-size:12px;opacity:.62;letter-spacing:2px}
+.nav-links{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{color:rgba(255,255,255,.72);font-size:14px;padding:7px 13px;border-radius:8px;white-space:nowrap;transition:.25s}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.1)}
+.nav-links a.on{color:#fff;background:rgba(255,255,255,.16)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:110px 24px 70px;color:#fff;overflow:hidden;
+  background:linear-gradient(158deg,#0a1730 0%,#0f2a5c 42%,#153a80 72%,#1d4ed8 125%)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.9;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='440' height='440' viewBox='0 0 440 440'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.055' stroke-width='1.4'%3E%3Cpath d='M20 70h130l42 42h110'/%3E%3Cpath d='M-10 210h90l62-62h150l42 42h116'/%3E%3Cpath d='M70 450V330l52-52h150'/%3E%3Cpath d='M450 130h-96l-52 52h-128'/%3E%3Cpath d='M210 -10v66l52 52v96'/%3E%3Cpath d='M330 450v-70l-60-60h-86'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.10'%3E%3Ccircle cx='20' cy='70' r='4'/%3E%3Ccircle cx='302' cy='112' r='4'/%3E%3Ccircle cx='450' cy='130' r='4'/%3E%3Ccircle cx='272' cy='278' r='4'/%3E%3Ccircle cx='262' cy='108' r='4'/%3E%3Ccircle cx='184' cy='320' r='4'/%3E%3Ccircle cx='330' cy='380' r='4'/%3E%3C/g%3E%3C/svg%3E")}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 55% 42% at 82% 12%,rgba(96,165,250,.20),transparent 60%),radial-gradient(ellipse 50% 45% at 12% 88%,rgba(245,158,11,.12),transparent 60%)}
+.hero>*{position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;padding:7px 18px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.08);margin-bottom:26px}
+.hero-photo{width:118px;height:118px;border-radius:50%;padding:4px;background:linear-gradient(135deg,rgba(255,255,255,.5),rgba(255,255,255,.12));margin:0 auto 22px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.hero-photo img{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:top center}
+.hero-badge .pulse{width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 0 rgba(74,222,128,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+.hero h1{font-size:clamp(44px,7.5vw,76px);font-weight:800;letter-spacing:10px;text-indent:10px;margin-bottom:14px;text-shadow:0 6px 24px rgba(0,0,0,.35)}
+.hero-title{font-size:clamp(17px,2.4vw,24px);font-weight:600;letter-spacing:3px;margin-bottom:10px;color:#dbe8ff}
+.hero-school{font-size:14px;letter-spacing:1.5px;color:rgba(255,255,255,.62);margin-bottom:34px}
+.hero-stats{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;max-width:900px}
+.stat{min-width:170px;padding:16px 26px;border-radius:14px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(6px)}
+.stat b{display:block;font-size:26px;font-weight:800;letter-spacing:.5px;color:#fff}
+.stat b i{font-style:normal;font-size:15px;font-weight:600;color:#ffd58a}
+.stat span{font-size:12.5px;color:rgba(255,255,255,.66);letter-spacing:1px}
+.hero-cta{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:10px;font-size:15px;font-weight:600;letter-spacing:1px;transition:.25s}
+.btn-gold{background:linear-gradient(135deg,#f7b955,#f59e0b);color:#3a2200;box-shadow:0 8px 24px rgba(245,158,11,.35)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(245,158,11,.45)}
+.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.55);font-size:12px;letter-spacing:2px;display:flex;flex-direction:column;align-items:center;gap:6px;z-index:1}
+.scroll-hint::after{content:"";width:1px;height:34px;background:linear-gradient(rgba(255,255,255,.6),transparent);animation:drop 1.6s infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}55%{transform:scaleY(1);transform-origin:top}56%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- layout ---------- */
+main{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:84px 0 8px;scroll-margin-top:64px}
+.sec-head{margin-bottom:40px}
+.kicker{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:3.5px;color:var(--primary);text-transform:uppercase;margin-bottom:10px}
+.kicker::before{content:"";width:26px;height:2px;background:var(--primary)}
+.kicker.gold{color:var(--gold)}
+.kicker.gold::before{background:var(--gold-bright)}
+.sec-head h2{font-size:clamp(26px,3.4vw,34px);font-weight:800;letter-spacing:2px}
+.sec-head p{color:var(--muted);margin-top:8px;font-size:15px}
+
+/* ---------- awards ---------- */
+.award-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:18px}
+.award-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px 24px 20px 28px;position:relative;overflow:hidden;border:1px solid var(--line);display:flex;gap:18px;align-items:flex-start}
+.award-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:linear-gradient(#3b82f6,#2563eb)}
+.award-card.national::before{background:linear-gradient(#f59e0b,#d97706)}
+.award-medal{flex:none;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:25px;margin-top:3px}
+.award-card.national .award-medal{background:linear-gradient(145deg,#fef3c7,#fde68a);box-shadow:inset 0 0 0 2px #fcd34d}
+.award-card.provincial .award-medal{background:linear-gradient(145deg,#dbeafe,#bfdbfe);box-shadow:inset 0 0 0 2px #93c5fd}
+.award-body{min-width:0}
+.award-top{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.award-level{font-size:12px;font-weight:700;letter-spacing:1px;padding:2.5px 10px;border-radius:999px}
+.national .award-level{background:linear-gradient(135deg,#fef3c7,#fde68a);color:#92400e}
+.provincial .award-level{background:linear-gradient(135deg,#dbeafe,#bfdbfe);color:#1d4ed8}
+.award-date{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.award-body h3{font-size:16.5px;font-weight:700;line-height:1.5}
+.award-result{font-size:14px;color:var(--primary);font-weight:600;margin-top:2px}
+.national .award-result{color:var(--gold)}
+.award-work{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.6}
+.award-work a{font-weight:600;font-size:13px;white-space:nowrap}
+.honor-strip{margin-top:26px;background:linear-gradient(135deg,#0f2a5c,#153a80);border-radius:var(--radius);padding:22px 28px;color:#fff;display:flex;align-items:center;gap:20px;flex-wrap:wrap;box-shadow:var(--shadow)}
+.honor-strip b{font-size:15px;letter-spacing:1px;white-space:nowrap}
+.honor-strip .hchips{display:flex;gap:10px;flex-wrap:wrap}
+.honor-strip .hchip{font-size:13px;padding:6px 14px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);letter-spacing:.5px}
+
+/* ---------- skills ---------- */
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:18px}
+.skill-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line);padding:26px 24px;transition:.3s}
+.skill-card:hover{transform:translateY(-4px);box-shadow:0 4px 10px rgba(16,37,77,.06),0 22px 44px rgba(16,37,77,.12)}
+.skill-icon{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:23px;margin-bottom:16px;background:linear-gradient(145deg,#eff5ff,#dbe8fe);box-shadow:inset 0 0 0 1px #d3e2fd}
+.skill-card h3{font-size:17px;font-weight:700;margin-bottom:4px;letter-spacing:.5px}
+.skill-card .sub{font-size:12.5px;color:var(--muted);margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:12.5px;padding:5px 12px;border-radius:8px;background:#f1f5fc;color:#42526e;border:1px solid #e4eaf4;letter-spacing:.3px}
+.chip.hl{background:linear-gradient(135deg,#2456e6,#3b82f6);color:#fff;border-color:transparent;font-weight:600;box-shadow:0 3px 10px rgba(37,99,235,.3)}
+.skill-note{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--muted);line-height:1.8}
+
+/* ---------- intern ---------- */
+.intern-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line);padding:30px 34px}
+.intern-top{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+.intern-top h3{font-size:19px;font-weight:800;letter-spacing:.5px}
+.intern-role{font-size:14px;color:var(--primary);font-weight:600}
+.intern-date{margin-left:auto;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.intern-dept{font-size:13.5px;color:var(--muted);margin-bottom:16px}
+.intern-card ul{list-style:none;display:grid;gap:10px}
+.intern-card li{position:relative;padding-left:22px;font-size:14.5px;color:#33415c;line-height:1.8}
+.intern-card li::before{content:"";position:absolute;left:2px;top:11px;width:7px;height:7px;border-radius:2px;background:var(--primary);transform:rotate(45deg)}
+.intern-card li b{color:var(--ink)}
+
+/* ---------- projects ---------- */
+.project{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line);overflow:hidden;margin-bottom:34px}
+.proj-award{display:flex;align-items:center;gap:10px;padding:11px 30px;font-size:13.5px;font-weight:600;letter-spacing:.5px;color:#92400e;background:linear-gradient(90deg,rgba(254,243,199,.9),rgba(253,230,138,.45),transparent)}
+.proj-award.prov{color:#1d4ed8;background:linear-gradient(90deg,rgba(219,234,254,.9),rgba(191,219,254,.45),transparent)}
+.proj-award.neutral{color:#33415c;background:linear-gradient(90deg,rgba(226,232,240,.9),rgba(203,213,225,.4),transparent)}
+.proj-inner{padding:28px 32px 26px}
+.proj-head{display:flex;gap:18px;align-items:flex-start;margin-bottom:14px}
+.proj-num{flex:none;font-size:30px;font-weight:800;color:transparent;-webkit-text-stroke:1.5px #c3d4f5;line-height:1;margin-top:4px;font-variant-numeric:tabular-nums}
+.proj-head h3{font-size:19.5px;font-weight:800;line-height:1.5}
+.proj-meta{font-size:13px;color:var(--muted);margin-top:4px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.proj-meta .role{color:var(--primary);font-weight:600}
+.proj-brief{font-size:14.5px;color:#33415c;background:#f6f9ff;border-left:3px solid #93c5fd;padding:10px 16px;border-radius:0 10px 10px 0;margin-bottom:16px}
+.proj-points{list-style:none;display:grid;gap:9px;margin-bottom:18px}
+.proj-points li{position:relative;padding-left:20px;font-size:14px;color:#33415c;line-height:1.75}
+.proj-points li::before{content:"";position:absolute;left:0;top:10px;width:6px;height:6px;border-radius:50%;background:var(--primary)}
+.proj-points b{color:var(--ink)}
+.proj-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:18px}
+.pstat{background:#f8fafd;border:1px solid var(--line);border-radius:12px;padding:12px 16px;text-align:center}
+.pstat b{display:block;font-size:21px;font-weight:800;color:var(--primary);font-variant-numeric:tabular-nums}
+.pstat span{font-size:12px;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{font-size:12px;padding:4px 11px;border-radius:999px;background:#eef3fb;color:#4a5b7a;border:1px solid #dfe7f3}
+
+/* ---------- education ---------- */
+.edu-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line);padding:30px 34px}
+.edu-top{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.edu-top h3{font-size:20px;font-weight:800}
+.edu-top .major{font-size:14.5px;color:var(--primary);font-weight:600}
+.edu-top .edu-date{margin-left:auto;font-size:13px;color:var(--muted)}
+.edu-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:18px}
+.edu-stats .pstat b{color:var(--ink)}
+.course-line{font-size:13.5px;color:var(--muted);margin-bottom:12px}
+.course-line b{color:#33415c;font-weight:600}
+.edu-honors{display:flex;gap:9px;flex-wrap:wrap}
+.edu-honors span{font-size:12.5px;padding:4.5px 13px;border-radius:999px;background:#fff7ea;color:#92600a;border:1px solid #fde8c0}
+
+/* ---------- certificates ---------- */
+.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media (max-width:860px){.cert-grid{grid-template-columns:1fr}}
+.cert{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line);overflow:hidden;cursor:zoom-in;transition:.3s}
+.cert:hover{transform:translateY(-5px);box-shadow:0 4px 10px rgba(16,37,77,.06),0 24px 48px rgba(16,37,77,.14)}
+.cert .frame{padding:16px 16px 0;background:linear-gradient(160deg,#fbfcff,#f2f6fd)}
+.cert img{width:100%;aspect-ratio:4/3.4;object-fit:contain;border-radius:8px;background:#fff;transition:.35s}
+.cert:hover img{transform:scale(1.015)}
+.cert figcaption{padding:13px 18px 15px;font-size:14px;font-weight:600;display:flex;align-items:center;gap:9px}
+.cert figcaption i{font-style:normal;font-size:12px;font-weight:600;color:var(--muted);margin-left:auto;letter-spacing:.5px}
+
+/* ---------- practice ---------- */
+.practice-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:18px}
+.practice-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid var(--line);padding:26px 28px}
+.practice-card h3{font-size:16.5px;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.practice-card p{font-size:14px;color:#33415c;line-height:1.9}
+
+/* ---------- contact / footer ---------- */
+.contact-wrap{background:linear-gradient(158deg,#0a1730,#0f2a5c 55%,#153a80);border-radius:20px;color:#fff;padding:52px 40px;text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.contact-wrap::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='440' height='440' viewBox='0 0 440 440'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.05' stroke-width='1.4'%3E%3Cpath d='M20 70h130l42 42h110'/%3E%3Cpath d='M-10 210h90l62-62h150l42 42h116'/%3E%3Cpath d='M70 450V330l52-52h150'/%3E%3Cpath d='M210 -10v66l52 52v96'/%3E%3C/g%3E%3C/svg%3E")}
+.contact-wrap>*{position:relative}
+.contact-wrap h2{font-size:26px;font-weight:800;letter-spacing:3px;margin-bottom:10px}
+.contact-wrap>p{color:rgba(255,255,255,.65);font-size:14.5px;margin-bottom:30px;letter-spacing:1px}
+.contact-rows{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.contact-rows a,.contact-rows .citem{display:inline-flex;align-items:center;gap:9px;padding:12px 24px;border-radius:12px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:14.5px;letter-spacing:.5px;transition:.25s}
+.contact-rows a:hover{background:rgba(255,255,255,.2);transform:translateY(-2px)}
+footer{padding:30px 0 34px;text-align:center;color:#9aa8c0;font-size:12.5px;letter-spacing:1px}
+
+/* ---------- lightbox ---------- */
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(8,15,30,.88);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:30px;cursor:zoom-out}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(92vw,880px);max-height:88vh;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.lightbox .lb-cap{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:#fff;font-size:14px;letter-spacing:1px;background:rgba(255,255,255,.12);padding:8px 22px;border-radius:999px}
+.lightbox .lb-close{position:absolute;top:22px;right:30px;color:#fff;font-size:30px;line-height:1;opacity:.75;cursor:pointer}
+.lightbox .lb-close:hover{opacity:1}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.scroll-hint::after,.hero-badge .pulse{animation:none}}
+
+/* ---------- responsive ---------- */
+@media (max-width:760px){
+  .nav-logo small{display:none}
+  .nav-links a{padding:7px 9px;font-size:13px}
+  .hero{padding:96px 18px 70px}
+  .hero h1{letter-spacing:6px;text-indent:6px}
+  .stat{min-width:calc(50% - 7px);padding:13px 16px}
+  .stat b{font-size:21px}
+  section{padding:64px 0 4px}
+  .proj-inner,.intern-card,.edu-card{padding:22px 20px}
+  .proj-award{padding:10px 20px;font-size:12.5px}
+  .proj-num{display:none}
+  .contact-wrap{padding:40px 22px}
+  .award-card{padding:18px 18px 16px 22px;gap:14px}
+  .cert .frame{padding:12px 12px 0}
+}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="nav-inner">
+    <div class="nav-logo"><span class="dot"></span>蔡浩宇 <small>EMBEDDED · 2027</small></div>
+    <div class="nav-links">
+      <a href="#awards" class="on">竞赛获奖</a>
+      <a href="#skills">专业技能</a>
+      <a href="#intern">实习经历</a>
+      <a href="#projects">项目经历</a>
+      <a href="#edu">教育经历</a>
+      <a href="#certs">荣誉证书</a>
+      <a href="#contact">联系我</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-badge"><span class="pulse"></span>2027届 · 可到岗实习 / 校招</div>
+  <div class="hero-photo"><img src="{{IMG0}}" alt="蔡浩宇证件照"></div>
+  <h1>蔡浩宇</h1>
+  <p class="hero-title">嵌入式设计工程师 / 边缘计算部署工程师</p>
+  <p class="hero-school">中南林业科技大学 · 通信工程 · 湖南长沙 / 广东深圳</p>
+  <div class="hero-stats">
+    <div class="stat"><b>5 <i>项</i></b><span>学科竞赛奖项 · 国家级2项</span></div>
+    <div class="stat"><b>6.0 <i>TOPS</i></b><span>RK3588 NPU 端侧推理</span></div>
+    <div class="stat"><b>38 <i>ms</i></b><span>INT8 量化单帧推理</span></div>
+    <div class="stat"><b>3.92</b><span>综合绩点 · 综合排名前3%</span></div>
+  </div>
+  <div class="hero-cta">
+    <a class="btn btn-gold" href="#awards">🏅 查看竞赛获奖</a>
+    <a class="btn btn-ghost" href="https://github.com/jun-chy" target="_blank" rel="noopener">GitHub @jun-chy</a>
+  </div>
+  <div class="scroll-hint">下滑了解我</div>
+</header>
+
+<main>
+
+<!-- ============ 竞赛获奖 ============ -->
+<section id="awards">
+  <div class="sec-head reveal">
+    <div class="kicker gold">Competition Awards</div>
+    <h2>竞赛获奖</h2>
+    <p>5 项省级以上学科竞赛奖项，其中国家级 2 项、省级 3 项 —— 每一项都对应一个完整落地的软硬件作品。</p>
+  </div>
+  <div class="award-grid">
+    <div class="award-card national reveal">
+      <div class="award-medal">🥇</div>
+      <div class="award-body">
+        <div class="award-top"><span class="award-level">国家级</span><span class="award-date">2026.06</span></div>
+        <h3>第十七届中国大学生服务外包创新创业大赛</h3>
+        <p class="award-result">国家三等奖</p>
+        <p class="award-work">获奖作品：基于 OpenHarmony 的能效标签与缺陷检测系统 · <a href="#proj1">查看项目 →</a></p>
+      </div>
+    </div>
+    <div class="award-card national reveal">
+      <div class="award-medal">🥇</div>
+      <div class="award-body">
+        <div class="award-top"><span class="award-level">国家级</span><span class="award-date">2025.08</span></div>
+        <h3>第十一届全国大学生物理实验竞赛</h3>
+        <p class="award-result">国家三等奖</p>
+        <p class="award-work">获奖作品：基于欧拉-伯努利梁理论的位移场感知系统 · <a href="#proj3">查看项目 →</a></p>
+      </div>
+    </div>
+    <div class="award-card provincial reveal">
+      <div class="award-medal">🥈</div>
+      <div class="award-body">
+        <div class="award-top"><span class="award-level">省级</span><span class="award-date">2025.08</span></div>
+        <h3>2025 年全国大学生电子设计竞赛（E 题）</h3>
+        <p class="award-result">省级二等奖</p>
+        <p class="award-work">获奖作品：简易自行瞄准装置 · <a href="#proj5">查看项目 →</a></p>
+      </div>
+    </div>
+    <div class="award-card provincial reveal">
+      <div class="award-medal">🥈</div>
+      <div class="award-body">
+        <div class="award-top"><span class="award-level">省级</span><span class="award-date">2025.07</span></div>
+        <h3>第十八届全国大学生计算机设计大赛</h3>
+        <p class="award-result">省级二等奖</p>
+      </div>
+    </div>
+    <div class="award-card provincial reveal">
+      <div class="award-medal">🥉</div>
+      <div class="award-body">
+        <div class="award-top"><span class="award-level">省级</span><span class="award-date">2025.07</span></div>
+        <h3>第十六届服务外包创新创业大赛（中南赛区）</h3>
+        <p class="award-result">省级三等奖</p>
+        <p class="award-work">获奖作品：钢视智检——钢板表面缺陷检测系统 · <a href="#proj4">查看项目 →</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="honor-strip reveal">
+    <b>其他荣誉</b>
+    <div class="hchips">
+      <span class="hchip">国家励志奖学金</span>
+      <span class="hchip">校级奖学金 · 连续三年</span>
+      <span class="hchip">校级优秀学生干部</span>
+      <span class="hchip">CET-4</span>
+      <span class="hchip">嵌入式系统设计软考（备考中）</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 专业技能 ============ -->
+<section id="skills">
+  <div class="sec-head reveal">
+    <div class="kicker">Technical Skills</div>
+    <h2>专业技能</h2>
+    <p>以嵌入式平台与端侧 AI 部署为核心：从 MCU/MPU 选型、外设驱动、系统烧录，到模型量化与 NPU 推理优化，全流程动手实践。</p>
+  </div>
+  <div class="skill-grid">
+    <div class="skill-card reveal">
+      <div class="skill-icon">🔌</div>
+      <h3>嵌入式平台与驱动</h3>
+      <p class="sub">高端 MPU · MCU 生态 · 外设通信</p>
+      <div class="chips">
+        <span class="chip hl">RK3588（6.0 TOPS NPU）</span>
+        <span class="chip hl">OpenHarmony 部署</span>
+        <span class="chip hl">STM32</span>
+        <span class="chip hl">ESP8266 / ESP32</span>
+        <span class="chip hl">FreeRTOS</span>
+        <span class="chip">51 单片机</span>
+        <span class="chip">Arduino</span>
+        <span class="chip">STM32CubeMX</span>
+        <span class="chip">Keil MDK</span>
+        <span class="chip">UART / I²C / SPI</span>
+        <span class="chip">NPU 推理引擎接入</span>
+      </div>
+      <p class="skill-note">系统烧录 · 外设驱动适配 · 示波器/万用表信号调试</p>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🧠</div>
+      <h3>边缘 AI 与模型部署</h3>
+      <p class="sub">训练 → 量化 → 端侧推理 全链路</p>
+      <div class="chips">
+        <span class="chip hl">YOLO 系列（v26/v11/v8）</span>
+        <span class="chip hl">MindSpore Lite</span>
+        <span class="chip hl">ONNX Runtime</span>
+        <span class="chip hl">INT8 / FP16 量化</span>
+        <span class="chip">CANN 异构工具链</span>
+        <span class="chip">数据集标注 → 训练 → 评估</span>
+        <span class="chip">DFL / UGS / SAHI 改进</span>
+        <span class="chip">RTSP / RTMP 流媒体</span>
+      </div>
+      <p class="skill-note">NPU 推理优化：INT8 量化后单帧 38ms、精度保持 99%+</p>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">💻</div>
+      <h3>软件开发</h3>
+      <p class="sub">嵌入式 C · Python · 鸿蒙应用</p>
+      <div class="chips">
+        <span class="chip hl">C</span>
+        <span class="chip hl">Python</span>
+        <span class="chip hl">ArkTS（鸿蒙）</span>
+        <span class="chip">PyQt5 上位机（Win/Linux/统信 UOS）</span>
+        <span class="chip">多线程设计</span>
+        <span class="chip">ArkUI 声明式 UI</span>
+        <span class="chip">NAPI 跨语言调用</span>
+        <span class="chip">Git / GitHub</span>
+      </div>
+      <p class="skill-note">独立开发跨平台上位机与鸿蒙 APP（相机 / 文件 / HiLog 系统 API）</p>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">⚙️</div>
+      <h3>硬件设计与效率工具</h3>
+      <p class="sub">原理图 PCB · 结构 · AI 辅助开发</p>
+      <div class="chips">
+        <span class="chip hl">嘉立创 EDA（原理图 / PCB）</span>
+        <span class="chip">SolidWorks 3D 建模</span>
+        <span class="chip">PLA 3D 打印</span>
+        <span class="chip">Multisim</span>
+        <span class="chip">WiFi HTTP 物联网协议设计</span>
+        <span class="chip">Claude Code / Copilot</span>
+        <span class="chip">Prompt 工程</span>
+      </div>
+      <p class="skill-note">元器件选型 · BOM 编制 · 传感器信号调理电路搭建</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 实习经历 ============ -->
+<section id="intern">
+  <div class="sec-head reveal">
+    <div class="kicker">Internship</div>
+    <h2>实习经历</h2>
+  </div>
+  <div class="intern-card reveal">
+    <div class="intern-top">
+      <h3>中国电子科技集团公司第四十八研究所</h3>
+      <span class="intern-role">硬件助理工程师</span>
+      <span class="intern-date">2026.03 – 至今</span>
+    </div>
+    <p class="intern-dept">传感器与系统研究部 · 半导体装备研发方向（离子注入机等）</p>
+    <ul>
+      <li>参与<b>传感器信号调理与驱动电路方案优化</b>，协助原理图绘制与元器件选型，配合 PCB Layout 审核与样机焊接调试，排查初样阶段电路功能异常</li>
+      <li>参与功能测试、环境适应性与可靠性测试：使用<b>示波器、万用表</b>采集关键节点信号，建立测试数据记录模板，运用统计方法进行趋势分析与异常筛选，输出标准化测试报告</li>
+      <li>负责<b>设计说明、测试规范、BOM 清单</b>及器件规格书等研发技术文档的编制与版本管理，保障研发资料规范化、可追溯</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 项目经历 ============ -->
+<section id="projects">
+  <div class="sec-head reveal">
+    <div class="kicker">Projects</div>
+    <h2>项目经历</h2>
+    <p>5 个完整落地的软硬件项目 —— 其中 4 个为学科竞赛获奖作品，覆盖边缘计算、鸿蒙生态、IoT 固件、机器视觉与传感系统。</p>
+  </div>
+
+  <article class="project reveal" id="proj1">
+    <div class="proj-award">🏅 第十七届中国大学生服务外包创新创业大赛 · 国家三等奖</div>
+    <div class="proj-inner">
+      <div class="proj-head">
+        <span class="proj-num">01</span>
+        <div>
+          <h3>基于 OpenHarmony 的多任务能效标签与缺陷检测系统</h3>
+          <div class="proj-meta"><span>2026.02 – 2026.06</span><span>·</span><span class="role">核心成员（硬件环境 + 鸿蒙 APP + 推理部署）</span></div>
+        </div>
+      </div>
+      <p class="proj-brief">针对家电出厂质检高度依赖人工的痛点，基于国产 OpenHarmony 操作系统与 RK3588 边缘计算平台构建<b>全栈国产化工业视觉质检系统</b>，实现能效标签定位、等级识别与包装缺陷自动检测。</p>
+      <ul class="proj-points">
+        <li><b>硬件环境搭建：</b>完成 RK3588 开发板 OpenHarmony 系统烧录、CANN 异构计算工具链配置、UVC 摄像头驱动适配，保障推理引擎与采集链路稳定运行</li>
+        <li><b>鸿蒙端全栈开发：</b>独立开发鸿蒙 APP（6 大功能模块）——系统监控首页（CPU/内存实时曲线）、缺陷检测（RTSP 实时流 / 本地视频 / 图片，1/4/9 画面）、缺陷记录、数据报告 Dashboard、数据追溯、模型管理</li>
+        <li><b>推理引擎集成：</b>实现 Letterbox 预处理 → MindSpore Lite 推理 → NMS 后处理完整管线，支持 FP32/FP16/INT8 三种精度、12 种模型配置灵活切换</li>
+      </ul>
+      <div class="proj-stats">
+        <div class="pstat"><b>38 ms</b><span>INT8 单张推理</span></div>
+        <div class="pstat"><b>99.18 %</b><span>量化后精度保持</span></div>
+        <div class="pstat"><b>2.89 MB</b><span>最小模型体积</span></div>
+        <div class="pstat"><b>12 种</b><span>模型配置切换</span></div>
+      </div>
+      <div class="tags"><span>OpenHarmony</span><span>RK3588</span><span>MindSpore Lite</span><span>CANN</span><span>INT8 量化</span><span>ArkTS</span><span>YOLO</span><span>RTSP</span></div>
+    </div>
+  </article>
+
+  <article class="project reveal" id="proj2">
+    <div class="proj-award neutral">🔧 自研项目 · 持续迭代中</div>
+    <div class="proj-inner">
+      <div class="proj-head">
+        <span class="proj-num">02</span>
+        <div>
+          <h3>分布式 AI 人体追踪照明系统（智慧服装店场景）</h3>
+          <div class="proj-meta"><span>2025.06 – 至今</span><span>·</span><span class="role">核心开发（架构设计 + 固件开发 + 机械结构）</span></div>
+        </div>
+      </div>
+      <p class="proj-brief">针对传统服装店照明无法动态追踪顾客的痛点，设计基于分布式 AI 视觉的智能追光系统：顾客走近展示区时，灯光自动追踪照射。</p>
+      <ul class="proj-points">
+        <li><b>系统架构：</b>设计 4 节点无主控分布式架构（1 视觉节点 + 3 灯节点），基于 ESP8266 + FreeRTOS 实现全系统 WiFi 互联</li>
+        <li><b>通信协议：</b>自研 WiFi HTTP 应用层协议（追踪启停、PTZ 角度同步、心跳检测），响应延迟 &lt;100ms</li>
+        <li><b>核心算法：</b>小孔成像模型实现「图像坐标系 → 物理坐标系 → 云台坐标系」三级转换，基于 atan2 视差修正 Pan/Tilt 角度，达到角度级追踪精度</li>
+        <li><b>传感与结构：</b>HUSKYLENS AI 摄像头（人体检测）+ VL53L0X ToF（靠近检测）+ BH1750（环境光自适应调光）；SolidWorks 云台建模、PLA 3D 打印承力件</li>
+      </ul>
+      <div class="proj-stats">
+        <div class="pstat"><b>&lt;100 ms</b><span>协议响应延迟</span></div>
+        <div class="pstat"><b>4 节点</b><span>无主控分布式架构</span></div>
+        <div class="pstat"><b>角度级</b><span>云台追踪精度</span></div>
+      </div>
+      <div class="tags"><span>ESP8266</span><span>FreeRTOS</span><span>WiFi HTTP 协议</span><span>ToF 测距</span><span>云台控制</span><span>SolidWorks</span><span>3D 打印</span></div>
+    </div>
+  </article>
+
+  <article class="project reveal" id="proj3">
+    <div class="proj-award">🏅 第十一届全国大学生物理实验竞赛 · 国家三等奖</div>
+    <div class="proj-inner">
+      <div class="proj-head">
+        <span class="proj-num">03</span>
+        <div>
+          <h3>基于欧拉-伯努利梁理论的位移场感知系统</h3>
+          <div class="proj-meta"><span>2025.06 – 至今</span><span>·</span><span class="role">核心开发（理论建模 + 传感电路 + 实验验证）</span></div>
+        </div>
+      </div>
+      <p class="proj-brief">针对工业悬臂梁位移测量依赖高成本激光位移传感器（采购贵、调试复杂、恶劣工况不稳定）的痛点，研发低成本、高稳定性的全场位移传感方案。</p>
+      <ul class="proj-points">
+        <li><b>理论建模：</b>基于欧拉-伯努利梁理论推导位移反演模型，从原理层面保障测量可靠性</li>
+        <li><b>硬件实现：</b>金属箔式应变片搭建全桥测量电路，结合数据采集卡实现应变信号高精度采集</li>
+        <li><b>实验验证：</b>设计 3 种尺寸悬臂梁场景完成全维度验证；控制变量法分析传感器安装位置对精度的影响，沉淀标准化部署指导方案</li>
+        <li><b>成果沉淀：</b>相关研究成果已形成学术论文初稿待投稿，参与竞赛申报材料撰写</li>
+      </ul>
+      <div class="proj-stats">
+        <div class="pstat"><b>≤ 2 %</b><span>测量误差（工业级）</span></div>
+        <div class="pstat"><b>-80 %</b><span>硬件采购成本</span></div>
+        <div class="pstat"><b>1 篇</b><span>论文初稿待投稿</span></div>
+      </div>
+      <div class="tags"><span>传感电路设计</span><span>全桥应变测量</span><span>数据采集</span><span>误差分析</span><span>学术论文</span></div>
+    </div>
+  </article>
+
+  <article class="project reveal" id="proj4">
+    <div class="proj-award prov">🏅 第十六届服务外包创新创业大赛（中南赛区）· 省级三等奖 · 软著申请 1 项</div>
+    <div class="proj-inner">
+      <div class="proj-head">
+        <span class="proj-num">04</span>
+        <div>
+          <h3>钢视智检 —— 基于多尺度特征融合的钢板表面缺陷检测系统</h3>
+          <div class="proj-meta"><span>2025.02 – 2025.06</span><span>·</span><span class="role">项目负责人</span></div>
+        </div>
+      </div>
+      <p class="proj-brief">面向金属加工企业开发高精度、跨平台的实时钢板表面缺陷检测系统，替代低效人工检测。</p>
+      <ul class="proj-points">
+        <li><b>算法框架：</b>基于 YOLOv11 构建检测框架，采用图像分割、标签融合与类别重组优化策略，整合 3 个公开工业缺陷数据集，高分辨率场景 mAP 提升 8.7pp</li>
+        <li><b>跨平台系统：</b>PyQt5 开发 GUI，多线程实现检测与界面并行；支持图像/视频/摄像头输入、CSV/Excel 结果导出，兼容 Windows / Linux / 统信 UOS</li>
+        <li><b>落地进展：</b>已申请软件著作权 1 项，与 1 家本地金属加工企业达成试用合作意向</li>
+      </ul>
+      <div class="proj-stats">
+        <div class="pstat"><b>+8.7 pp</b><span>mAP 精度提升</span></div>
+        <div class="pstat"><b>3 类</b><span>操作系统适配</span></div>
+        <div class="pstat"><b>-75 %</b><span>预计人工检测成本</span></div>
+      </div>
+      <div class="tags"><span>YOLOv11</span><span>数据集构建</span><span>PyQt5</span><span>多线程</span><span>统信 UOS</span><span>软件著作权</span></div>
+    </div>
+  </article>
+
+  <article class="project reveal" id="proj5">
+    <div class="proj-award prov">🏅 2025 年全国大学生电子设计竞赛（E 题）· 省级二等奖</div>
+    <div class="proj-inner">
+      <div class="proj-head">
+        <span class="proj-num">05</span>
+        <div>
+          <h3>简易自行瞄准装置 —— 自动寻迹小车 + 云台激光瞄准</h3>
+          <div class="proj-meta"><span>2025.07 – 2025.08</span><span>·</span><span class="role">核心开发（嵌入式控制 + 机器视觉 + 机械结构）</span></div>
+        </div>
+      </div>
+      <p class="proj-brief">2025 全国大学生电子设计竞赛 E 题：小车沿 100cm×100cm 黑线轨迹自动寻迹，二维云台控制激光在运动中连续追踪靶心，光斑直径 ≤0.5cm。</p>
+      <ul class="proj-points">
+        <li><b>嵌入式控制：</b>基于 TI MSPM0 系列 MCU 开发底层驱动 —— 灰度传感器阵列寻迹环控制、编码器里程计采集、差速转向算法，实现精准路径跟踪与圈数计数</li>
+        <li><b>机器视觉：</b>OpenMV 实现靶纸矩形特征检测与靶心定位，UART 与主控通信</li>
+        <li><b>闭环控制：</b>双舵机二维云台基于 PID 闭环快速精准指向，实现行驶过程中激光连续追踪靶心</li>
+      </ul>
+      <div class="proj-stats">
+        <div class="pstat"><b>≤ 2 cm</b><span>光斑距靶心偏差</span></div>
+        <div class="pstat"><b>≤ 2 s</b><span>瞄准模块击中靶心</span></div>
+        <div class="pstat"><b>≤ 20 s</b><span>单圈自动寻迹</span></div>
+      </div>
+      <div class="tags"><span>MSPM0</span><span>OpenMV</span><span>PID 闭环</span><span>编码器里程计</span><span>差速转向</span><span>UART</span></div>
+    </div>
+  </article>
+</section>
+
+<!-- ============ 教育经历 ============ -->
+<section id="edu">
+  <div class="sec-head reveal">
+    <div class="kicker">Education</div>
+    <h2>教育经历</h2>
+  </div>
+  <div class="edu-card reveal">
+    <div class="edu-top">
+      <h3>中南林业科技大学</h3>
+      <span class="major">通信工程 · 本科</span>
+      <span class="edu-date">2023.09 – 2027.06</span>
+    </div>
+    <div class="edu-stats">
+      <div class="pstat"><b>3.52</b><span>学分绩点</span></div>
+      <div class="pstat"><b>3.92</b><span>综合绩点</span></div>
+      <div class="pstat"><b>前 15%</b><span>专业排名 · 综合前 3%</span></div>
+      <div class="pstat"><b>44 门</b><span>90 分以上必修课（占 51.8%）</span></div>
+    </div>
+    <p class="course-line"><b>核心课程：</b>物联网技术原理及应用（98）· 数字信号处理及 DSP 实现（97）· 概率论与数理统计（97）· 数字图像信息处理（96）</p>
+    <div class="edu-honors">
+      <span>国家励志奖学金</span><span>校级奖学金 · 连续三年</span><span>校级优秀学生干部</span><span>中共正式党员</span><span>CET-4</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 荣誉证书 ============ -->
+<section id="certs">
+  <div class="sec-head reveal">
+    <div class="kicker gold">Certificates</div>
+    <h2>荣誉证书</h2>
+    <p>点击证书可放大查看原件。</p>
+  </div>
+  <div class="cert-grid">
+    <figure class="cert reveal">
+      <div class="frame"><img src="{{IMG3}}" alt="第十一届全国大学生物理实验竞赛国家三等奖证书" loading="lazy"></div>
+      <figcaption>🏆 全国大学生物理实验竞赛 · 国家三等奖<i>2025.12</i></figcaption>
+    </figure>
+    <figure class="cert reveal">
+      <div class="frame"><img src="{{IMG1}}" alt="国家励志奖学金证书" loading="lazy"></div>
+      <figcaption>🎖️ 国家励志奖学金<i>2023–2024 学年</i></figcaption>
+    </figure>
+    <figure class="cert reveal">
+      <div class="frame"><img src="{{IMG2}}" alt="校级优秀学生奖学金荣誉证书" loading="lazy"></div>
+      <figcaption>🎓 校级优秀学生奖学金<i>2023–2024 学年</i></figcaption>
+    </figure>
+    <figure class="cert reveal">
+      <div class="frame"><img src="{{IMG4}}" alt="校级优秀学生干部荣誉证书" loading="lazy"></div>
+      <figcaption>🧑‍💼 校级优秀学生干部<i>2023–2024 学年</i></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 综合实践 ============ -->
+<section id="practice">
+  <div class="sec-head reveal">
+    <div class="kicker">Leadership & Volunteer</div>
+    <h2>综合实践</h2>
+  </div>
+  <div class="practice-grid">
+    <div class="practice-card reveal">
+      <h3>🎓 学生工作</h3>
+      <p>担任通信工程专业学生党支部支委、学院党建中心副主任、辅导员助理、班级班长，累计组织党团建设、班级活动 30 余场，覆盖全院学生 1200 余人次；所在班级连续 3 年获评校级「优秀班集体」。</p>
+    </div>
+    <div class="practice-card reveal">
+      <h3>🤝 志愿服务</h3>
+      <p>策划参与三下乡支教、湖南省百公里志愿服务、学院迎新等活动 20 余项，累计志愿服务时长 50 小时，服务人群超 150 人，获校级「优秀志愿者」称号。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 联系 ============ -->
+<section id="contact">
+  <div class="contact-wrap reveal">
+    <h2>期待与您进一步交流</h2>
+    <p>嵌入式设计 / 边缘计算部署方向 · 长沙 / 深圳 · 可随时到岗实习</p>
+    <div class="contact-rows">
+      <a href="tel:17673270315">📱 17673270315</a>
+      <a href="mailto:cyh313362440@163.com">📧 cyh313362440@163.com</a>
+      <a href="https://github.com/jun-chy" target="_blank" rel="noopener">🐙 github.com/jun-chy</a>
+      <span class="citem">📍 湖南长沙（籍贯衡阳）</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>© 2026 蔡浩宇 · 嵌入式设计工程师 / 边缘计算部署工程师 · 中南林业科技大学 通信工程 2027 届</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lb-close">×</span>
+  <img id="lb-img" src="" alt="证书大图">
+  <span class="lb-cap" id="lb-cap"></span>
+</div>
+
+<script>
+(function(){
+  // scroll reveal
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // active nav
+  var links = document.querySelectorAll('.nav-links a');
+  var secs = Array.prototype.map.call(links, function(a){ return document.querySelector(a.getAttribute('href')); });
+  var navIo = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id); });
+      }
+    });
+  },{rootMargin:'-40% 0px -55% 0px'});
+  secs.forEach(function(s){ if(s) navIo.observe(s); });
+
+  // lightbox
+  var lb = document.getElementById('lightbox'),
+      lbImg = document.getElementById('lb-img'),
+      lbCap = document.getElementById('lb-cap');
+  document.querySelectorAll('.cert').forEach(function(fig){
+    fig.addEventListener('click', function(){
+      var img = fig.querySelector('img');
+      lbImg.src = img.src;
+      lbCap.textContent = fig.querySelector('figcaption').childNodes[0].textContent.trim();
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  function closeLb(){ lb.classList.remove('open'); lbImg.src=''; document.body.style.overflow=''; }
+  lb.addEventListener('click', closeLb);
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLb(); });
+})();
+</script>
+</body>
+</html>
