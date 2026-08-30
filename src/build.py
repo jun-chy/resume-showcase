@@ -9,7 +9,7 @@ tpl = (root / 'src' / 'template.html').read_text(encoding='utf-8')
 # extracted from the original page (see README in git history)
 imgs_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else root / 'src' / 'images'
 out = tpl
-for i in range(5):
+for i in range(6):
     p = imgs_dir / f'img{i}.jpeg'
     b64 = base64.b64encode(p.read_bytes()).decode()
     out = out.replace('{{IMG%d}}' % i, 'data:image/jpeg;base64,' + b64)
